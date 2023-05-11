@@ -1,0 +1,11 @@
+package com.bikkadit.firstjunit.calculator;
+
+public class Calculators {
+
+	public int addition(int a, int b) {
+
+		int c = a + b;
+		return c;
+
+	}
+}

@@ -1,0 +1,21 @@
+package com.bikkadit.firstjunit;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.bikkadit.firstjunit.calculator.Calculators;
+
+@SpringBootApplication
+public class FristJunitApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(FristJunitApplication.class, args);
+
+		System.out.println("Calculator Application Start.....");
+
+		Calculators calculators = new Calculators();
+		int addition = calculators.addition(45, 78);
+		System.out.println(addition);
+	}
+
+}

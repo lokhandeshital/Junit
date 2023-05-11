@@ -1,0 +1,20 @@
+package com.bikkadit.firstjunit.calculator;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CalculatorsTest {
+
+	@Test
+	public void testAddition() {
+
+		Calculators calculators = new Calculators();
+
+		int actualResult = calculators.addition(10, 10);
+
+		int expextedResult = 20;
+
+		assertEquals(expextedResult, actualResult);
+	}
+}
